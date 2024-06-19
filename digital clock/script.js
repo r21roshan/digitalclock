@@ -3,7 +3,7 @@
 let ampm = document.getElementById('ampm')
 function displayTime(){
     let dateTime = new Date();
-    let hr = padZero(dateTime.gethours());
+    let hr = dateTime.gethours();
     let min = padZero(dateTime.getMinutes());
     let sec = padZero(dateTime.getSeconds());
     if(hr>12){
@@ -12,8 +12,8 @@ function displayTime(){
     }
 
     document.getElementById('hours').innerHTML = padZero(hr) 
-    document.getElementById('mins').innerHTML = padZero(min) 
-    document.getElementById('seconds').innerHTML = padZero(sec)
+    document.getElementById('mins').innerHTML = min 
+    document.getElementById('seconds').innerHTML = sec
 }
 
 function padZero(num){
