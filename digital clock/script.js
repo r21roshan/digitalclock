@@ -1,9 +1,7 @@
-
-
 let ampm = document.getElementById('ampm')
 function displayTime(){
     let dateTime = new Date();
-    let hr = dateTime.gethours();
+    let hr = dateTime.getHours();
     let min = padZero(dateTime.getMinutes());
     let sec = padZero(dateTime.getSeconds());
     if(hr>12){
